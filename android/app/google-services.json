@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "839873165011",
+    "project_id": "traductor-biblico-3d849",
+    "storage_bucket": "traductor-biblico-3d849.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839873165011:android:30b23901f7d6cfa7348626",
+        "android_client_info": {
+          "package_name": "tr.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9aSax_Cc4DvYeJTjsk8FFF-rPLA_zphQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
