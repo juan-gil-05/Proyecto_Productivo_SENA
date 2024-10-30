@@ -2,7 +2,7 @@
 FLUTTER_ROOT=/Users/gilj0/development/flutter
 FLUTTER_APPLICATION_PATH=/Users/gilj0/Desktop/SENA etapa productiva/Traductor_Biblico_App/traductor_biblico
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=lib/main.dart
+FLUTTER_TARGET=/Users/gilj0/Desktop/SENA etapa productiva/Traductor_Biblico_App/traductor_biblico/lib/main.dart
 FLUTTER_BUILD_DIR=build
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
@@ -11,4 +11,4 @@ EXCLUDED_ARCHS[sdk=iphoneos*]=armv7
 DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
 TREE_SHAKE_ICONS=false
-PACKAGE_CONFIG=.dart_tool/package_config.json
+PACKAGE_CONFIG=/Users/gilj0/Desktop/SENA etapa productiva/Traductor_Biblico_App/traductor_biblico/.dart_tool/package_config.json
