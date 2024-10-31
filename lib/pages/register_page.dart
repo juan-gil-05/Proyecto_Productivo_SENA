@@ -34,12 +34,13 @@ class _RegisterPageState extends State<RegisterPage> {
   //Fnción para guardar el usuario en la base de datos
   void saveUser(User user) async {
     var result = await _firebaseApi.registerUser(user.email, user.password);
-    if (result) {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const LoginPage()));
-    } else {
-      _showMsg("no se registro el usuario");
-    }
+    String msg = "";
+    if(result == "invalid-email"){msg = "El correo electrónico no es valido";} else
+    if(result == "weak-password"){msg = "La contraseña debe tener minimo 6 digitos";} else
+    if(result == "email-already-in-use"){msg = "El correo electrónico ya esta en uso";} else
+    if(result == "network-request-failed"){msg = "Revise su conexión a internet";} else
+    msg = "Usuario registrado con exito";
+    _showMsg(msg);
   }
 
   //función al momento de oprimir el boton de registro
@@ -50,7 +51,11 @@ class _RegisterPageState extends State<RegisterPage> {
       if (_password.text == _reppassword.text) {
         var user = User(_email.text, _password.text);
         saveUser(user);
-      }
+         Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => const LoginPage()));
+      } else {
+          _showMsg("no se registro el usuario");
+     }
     });
   }
 
