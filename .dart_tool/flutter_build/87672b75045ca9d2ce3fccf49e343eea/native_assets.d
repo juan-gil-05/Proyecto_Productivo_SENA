@@ -1,1 +1,0 @@
- /Users/gilj0/Desktop/SENA\ etapa\ productiva/Traductor_Biblico_App/traductor_biblico/.dart_tool/flutter_build/87672b75045ca9d2ce3fccf49e343eea/native_assets.yaml: 
